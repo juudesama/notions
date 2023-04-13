@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ffffff;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #eb94ae;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="calender" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-days"></i> Calender</a>
+		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-check"></i> Goals</a>
+		<a id="habit-tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Habit tracker</a>
+		<a id="fitness-tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumbbell"></i> Fitness tracker</a>
+		<a id="mood-tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-moon"></i> Mood tracker</a>
+		<a id="booksfilms-tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Books/Films tracker</a>
+		<a id="content-planner" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-twitch"></i> Content planner</a>
+		<a id="recipes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-carrot"></i> Recipes</a>
+		<a id="travel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-plane"></i> Travel</a>
+		<a id="wishlist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Wishlist</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://home.com", '_blank').focus();
+			else if (id == "calender")
+				window.open("https://calender.com", '_blank').focus();
+			else if (id == "goals")
+				window.open("https://goals.com", '_blank').focus();
+			else if (id == "habit-tracker")
+				window.open("https://habit-tracker.com", '_blank').focus();
+			else if (id == "fitness-tracker")
+				window.open("https://fitness-tracker.com", '_blank').focus();
+			else if (id == "mood-tracker")
+				window.open("https://mood-tracker.com", '_blank').focus();
+			else if (id == "booksfilms-tracker")
+				window.open("https://booksfilms-tracker.com", '_blank').focus();
+			else if (id == "content-planner")
+				window.open("https://content-planner.com", '_blank').focus();
+			else if (id == "recipes")
+				window.open("https://recipes.com", '_blank').focus();
+			else if (id == "travel")
+				window.open("https://travel.com", '_blank').focus();
+			else if (id == "wishlist")
+				window.open("https://wishlist.com", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
